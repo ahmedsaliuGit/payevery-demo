@@ -1,0 +1,6 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="24.5786" fill="#014527" stroke="#1B442A" stroke-width="0.842767"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.2104 15H30.7894C33.1148 15 34.9999 16.8851 34.9999 19.2105V30.7895C34.9999 33.1149 33.1148 35 30.7894 35H19.2104C16.885 35 14.9999 33.1149 14.9999 30.7895V19.2105C14.9999 16.8851 16.885 15 19.2104 15Z" fill="#014527" stroke="white" stroke-width="0.842767"/>
+<ellipse cx="24.9999" cy="25.0005" rx="4.73684" ry="4.73684" fill="#014527" stroke="white" stroke-width="0.842767"/>
+<ellipse cx="31.3157" cy="18.6854" rx="1.05263" ry="1.05263" fill="#014527"/>
+</svg>
