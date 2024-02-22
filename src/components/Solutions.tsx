@@ -13,11 +13,11 @@ export default function Solutions() {
           />
         </div>
         <div className="py-8 md:flex-1">
-          <h4 className="text-3xl font-extrabold text-primary">
+          <h4 className="text-3xl lg:text-[2.75rem] lg:leading-[1.3] font-extrabold text-primary">
             Create tailored payment solutions using our thoroughly documented
             APIs
           </h4>
-          <p className="py-8 text-secondary text-sm font-light">
+          <p className="py-8 text-secondary text-sm lg:text-xl font-light">
             The in-depth and clear documentation of our APIs, enables you to
             create, from simple projects to intricate financial products
             catering to lots of customers. Got any ideas, it's time create.

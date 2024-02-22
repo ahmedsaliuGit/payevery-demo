@@ -35,7 +35,7 @@ export default function Header() {
           )}
         </div>
         <nav className="hidden lg:flex lg:items-center w-full">
-          <ul className="flex lg:gap-4 text-sm text-secondary">
+          <ul className="flex lg:gap-4 text-sm lg:text-[1rem] lg:leading-6 text-secondary">
             <li>
               <a href="#">Services</a>
             </li>
@@ -55,7 +55,7 @@ export default function Header() {
               <a href="#">Support</a>
             </li>
           </ul>
-          <ul className="flex items-center gap-4 text-sm text-secondary ml-auto">
+          <ul className="flex items-center gap-4 text-sm lg:text-[1rem] lg:leading-6 text-secondary ml-auto">
             <li>
               <a href="#">Login</a>
             </li>

@@ -1,12 +1,28 @@
 import Group37358 from "../assets/images/Group37358.png";
 import CheckIcon from "../assets/images/mobile_friendly2.png";
+import { ListType } from "../definitions";
+import useColorChangingList from "../hooks/useColorChangingList";
 
 export default function ChooseUs() {
+  const listItems: ListType<string>[] = [
+    { name: "Effortless electronic paymentssnns" },
+    { name: "Swiftly move funds between accounts" },
+    { name: "Simplify your payments with USSD service" },
+    { name: "Cross-border settlement service" },
+    { name: "Transactions to external accounts or beneficiaries" },
+  ];
+
+  const activeItem = useColorChangingList(listItems);
+
   return (
     <div className="bg-[url('assets/images/solutions-business-bgg1.png')] bg-no-repeat bg-bottom relative w-full pb-8">
       <div className="mt-8 md:flex md:items-center md:justify-between lg:container lg:mx-auto">
         <div className="md:order-2 md:flex-1">
-          <img src={Group37358} alt="why choose us illustration" />
+          <img
+            src={Group37358}
+            alt="why choose us illustration"
+            className="lg:max-w-[80%]"
+          />
         </div>
         <div className="mt-8 px-6 md:order-1 md:flex-1">
           <svg
@@ -23,67 +39,31 @@ export default function ChooseUs() {
             />
           </svg>
           <p className="my-4 text-lg text-secondary">Why Choose Us</p>
-          <h4 className="text-2xl text-primary font-extrabold mb-8 lg:text-3xl">
+          <h4 className="text-2xl lg:text-[2.75rem] lg:leading-[1.3] text-primary font-extrabold mb-8 lg:max-w-2xl">
             Discover{" "}
             <span className="text-tertiary">Endless Possibilities</span> with
             Paydestal
           </h4>
           <ul>
-            <li className="flex items-center justify-start mb-1">
-              <img
-                src={CheckIcon}
-                alt="mobile friendly check icon 2"
-                width={35}
-                height={35}
-              />
-              <span className="ml-4 text-sm text-secondary font-extralight">
-                Effortless electronic payments
-              </span>
-            </li>
-            <li className="flex items-center justify-start mb-1">
-              <img
-                src={CheckIcon}
-                alt="mobile friendly check icon 2"
-                width={35}
-                height={35}
-              />
-              <span className="ml-4 text-sm text-secondary font-extralight">
-                Swiftly move funds between accounts
-              </span>
-            </li>
-            <li className="flex items-center justify-start mb-1">
-              <img
-                src={CheckIcon}
-                alt="mobile friendly check icon 2"
-                width={35}
-                height={35}
-              />
-              <span className="ml-4 text-sm text-secondary font-extralight">
-                Simplify your payments with USSD service
-              </span>
-            </li>
-            <li className="flex items-center justify-start mb-1">
-              <img
-                src={CheckIcon}
-                alt="mobile friendly check icon 2"
-                width={35}
-                height={35}
-              />
-              <span className="ml-4 text-sm text-secondary font-extralight">
-                Cross-border settlement service
-              </span>
-            </li>
-            <li className="flex items-center justify-start mb-1">
-              <img
-                src={CheckIcon}
-                alt="mobile friendly check icon 2"
-                width={35}
-                height={35}
-              />
-              <span className="ml-4 text-sm text-secondary font-extralight">
-                Transactions to external accounts or beneficiaries
-              </span>
-            </li>
+            {listItems.map((item, index) => (
+              <li
+                key={item.name}
+                className="flex items-center justify-start mb-2 lg:mb-4"
+              >
+                <img
+                  src={CheckIcon}
+                  alt={`mobile friendly check icon 2 list item ${index}`}
+                  width={35}
+                  height={35}
+                />
+                <span
+                  className="ml-4 text-sm lg:text-2xl text-secondary font-extralight"
+                  style={{ color: index === activeItem ? "#F4B23E" : "" }}
+                >
+                  {item.name}
+                </span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

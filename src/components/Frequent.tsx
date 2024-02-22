@@ -11,7 +11,7 @@ export default function Frequent() {
 
   return (
     <Section>
-      <div className="w-full md:w-[72%] lg:w-[63%]  md:mx-auto px-8 text-center mt-4 lg:mt-12">
+      <div className="w-full md:max-w-[72%] lg:max-w-[45%]  md:mx-auto px-8 text-center mt-4 lg:mt-12">
         <p className="text-sm text-secondary font-semibold">
           If you have a question, we have an answer
         </p>

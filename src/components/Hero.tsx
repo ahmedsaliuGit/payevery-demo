@@ -13,7 +13,7 @@ export default function Hero() {
             The future of <span className="text-tertiary">Payment</span>{" "}
             Processing and Settlement
           </h1>
-          <p className="text-sm text-secondary font-normal mb-8">
+          <p className="text-sm lg:text-xl text-secondary font-normal mb-8">
             Revolutionizing financial transactions with a comprehensive suite of
             services ensuring seamless and secure payment solutions for diverse
             needs

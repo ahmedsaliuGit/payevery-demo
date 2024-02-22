@@ -4,10 +4,10 @@ import Logo from "../assets/images/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[url('assets/images/solutions-business-bgg2.png')] bg-no-repeat bg-bottom relative w-full">
+    <footer className="bg-[url('assets/images/solutions-business-bgg2.png')] bg-no-repeat bg-bottom lg:bg-[center_bottom_-8rem] relative w-full">
       <div>
         <div className="px-8">
-          <div className="p-8 bg-primary rounded-xl text-white text-center lg:max-w-[75%] lg:mx-auto lg:rounded-3xl lg:py-16">
+          <div className="p-8 bg-primary rounded-xl text-white text-center lg:max-w-[62%] lg:mx-auto lg:rounded-3xl lg:py-16">
             <h2 className="text-3xl lg:text-4xl font-extrabold mb-4">
               Ready to get started?
             </h2>
@@ -232,12 +232,12 @@ export default function Footer() {
         {/* Desktop */}
         <div className="p-8 container mx-auto hidden lg:flex lg:items-center lg:justify-between">
           <div className="basis-1/4">
-            <img src={Logo} alt="Footer logo" width={140} height={55} />
-            <p className="text-sm text-secondary font-[300] my-4">
+            <img src={Logo} alt="Footer logo" width={140} height={65} />
+            <p className="text-sm lg:text-xl text-secondary font-[300] my-4">
               A modern, technology payment processing and settlement built for
               you and your business.
             </p>
-            <ul className="flex items-center justify-start gap-2 mt-4">
+            <ul className="flex items-center justify-start gap-2 mt-4 lg:mt-9">
               <li>
                 <a href="#">
                   <svg
@@ -374,7 +374,7 @@ export default function Footer() {
           </div>
           <div className="text-secondary">
             <h6 className="font-semibold my-3">Company</h6>
-            <ul>
+            <ul className="lg:text-xl">
               <li className="text-sm font-[300] mb-2">
                 <a href="#">About Us</a>
               </li>
@@ -391,7 +391,7 @@ export default function Footer() {
           </div>
           <div className="text-secondary">
             <h6 className="font-semibold my-3">Useful Links</h6>
-            <ul>
+            <ul className="lg:text-xl">
               <li className="text-sm font-[300] mb-2">
                 <a href="#">Services</a>
               </li>
@@ -428,7 +428,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center text-secondary py-4">
-        <p className="text-sm font-light">
+        <p className="text-sm font-light lg:font-medium">
           © Copyright 2024. All rights reserved.
         </p>
       </div>
