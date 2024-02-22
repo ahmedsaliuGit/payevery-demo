@@ -173,7 +173,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="text-secondary text-right flex-1 lg:text-left">
-              <h6 className="font-semibold my-3">Company</h6>
+              <h6 className="font-semibold my-3 text-primary">Company</h6>
               <ul>
                 <li className="text-sm font-[300] mb-2">
                   <a href="#">About Us</a>
@@ -192,7 +192,7 @@ export default function Footer() {
           </div>
           <div className="flex items-start justify-between mt-4">
             <div className="text-secondary flex-1">
-              <h6 className="font-semibold my-3">Useful Links</h6>
+              <h6 className="font-semibold my-3 text-primary">Useful Links</h6>
               <ul>
                 <li className="text-sm font-[300] mb-2">
                   <a href="#">Services</a>
@@ -209,7 +209,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="flex-1">
-              <h6 className="font-semibold my-3">Newsletter</h6>
+              <h6 className="font-semibold my-3 text-primary">Newsletter</h6>
               <form action="#" method="Post">
                 <input
                   type="text"
