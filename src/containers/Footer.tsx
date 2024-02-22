@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[url('assets/images/solutions-business-bgg2.png')] bg-no-repeat bg-bottom lg:bg-[center_bottom_-8rem] relative w-full">
       <div>
         <div className="px-8">
-          <div className="p-8 bg-primary rounded-xl text-white text-center lg:max-w-[62%] lg:mx-auto lg:rounded-3xl lg:py-16">
+          <div className="p-8 bg-primary rounded-xl text-white text-center lg:max-w-[62%] lg:mx-auto lg:rounded-3xl lg:py-16 shadow-[0_25px_30px_-10px_rgba(0,0,0,0.5)] lg:mb-8">
             <h2 className="text-3xl lg:text-4xl font-extrabold mb-4">
               Ready to get started?
             </h2>
@@ -231,9 +231,15 @@ export default function Footer() {
         </div>
         {/* Desktop */}
         <div className="p-8 container mx-auto hidden lg:flex lg:items-center lg:justify-between">
-          <div className="basis-1/4">
-            <img src={Logo} alt="Footer logo" width={140} height={65} />
-            <p className="text-sm lg:text-xl text-secondary font-[300] my-4">
+          <div className="basis-1/3">
+            <img
+              src={Logo}
+              alt="Footer logo"
+              width={140}
+              height={65}
+              className="mb-2"
+            />
+            <p className="text-sm lg:text-xl text-secondary font-[300] mb-3">
               A modern, technology payment processing and settlement built for
               you and your business.
             </p>
@@ -373,7 +379,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="text-secondary">
-            <h6 className="font-semibold my-3">Company</h6>
+            <h6 className="font-semibold my-3 lg:mt-0 text-primary">Company</h6>
             <ul className="lg:text-xl">
               <li className="text-sm font-[300] mb-2">
                 <a href="#">About Us</a>
@@ -390,7 +396,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="text-secondary">
-            <h6 className="font-semibold my-3">Useful Links</h6>
+            <h6 className="font-semibold my-3 lg:mt-0 text-primary">
+              Useful Links
+            </h6>
             <ul className="lg:text-xl">
               <li className="text-sm font-[300] mb-2">
                 <a href="#">Services</a>
@@ -407,11 +415,13 @@ export default function Footer() {
             </ul>
           </div>
           <div className="basis-1/4">
-            <h6 className="font-semibold my-3">Newsletter</h6>
+            <h6 className="font-semibold my-3 lg:mt-0 text-primary">
+              Newsletter
+            </h6>
             <form action="#" method="Post">
               <input
                 type="text"
-                className="w-full border-[1px] border-gray-500 rounded-full h-8"
+                className="w-full border-[1px] border-gray-500 rounded-full h-8 lg:mb-4"
               />
               <button className="mt-4 rounded-full text-white py-3 px-6 bg-primary text-xs inline-block">
                 Subscribe Now{" "}
