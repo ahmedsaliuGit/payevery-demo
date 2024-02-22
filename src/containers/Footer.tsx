@@ -4,7 +4,7 @@ import Logo from "../assets/images/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[url('assets/images/solutions-business-bgg2.png')] bg-no-repeat bg-bottom relative w-full 2xl:container 2xl:mx-auto">
+    <footer className="bg-[url('assets/images/solutions-business-bgg2.png')] bg-no-repeat bg-bottom relative w-full">
       <div>
         <div className="px-8">
           <div className="p-8 bg-primary rounded-xl text-white text-center lg:max-w-[75%] lg:mx-auto lg:rounded-3xl lg:py-16">

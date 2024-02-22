@@ -3,7 +3,7 @@ import CheckIcon from "../assets/images/mobile_friendly2.png";
 
 export default function ChooseUs() {
   return (
-    <div className="bg-[url('assets/images/solutions-business-bgg1.png')] bg-no-repeat bg-bottom relative w-full pb-8 2xl:container 2xl:mx-auto">
+    <div className="bg-[url('assets/images/solutions-business-bgg1.png')] bg-no-repeat bg-bottom relative w-full pb-8">
       <div className="mt-8 md:flex md:items-center md:justify-between lg:container lg:mx-auto">
         <div className="md:order-2 md:flex-1">
           <img src={Group37358} alt="why choose us illustration" />

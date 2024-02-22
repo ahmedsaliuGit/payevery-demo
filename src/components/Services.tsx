@@ -2,7 +2,7 @@ import DashIllustration from "../assets/images/dash-illustration.png";
 
 export default function Services() {
   return (
-    <div className="w-full 2xl:container 2xl:mx-auto">
+    <div className="w-full">
       <div className="flex flex-col md:flex md:flex-row md:items-center">
         <div className="mb-4 lg:flex-1">
           <img src={DashIllustration} alt="dashboard illustration" />
